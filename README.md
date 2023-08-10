@@ -1,15 +1,16 @@
 # Basketball Game
 
-Simple basketball game with dribbling, shot and pass.
+- Simple basketball game with dribbling, shot and pass.
 
 ## Gameplay
-To shot, you must be in the highlighted area and looking towards the basket hoop.
+- To shot, you must be in the highlighted area and looking towards the basket hoop.
 Otherwise, you will pass ball.
-
 
 ## Controls
 - Move -> Joystick
- 
+
+### *[Play](https://senevsemih.itch.io/basketballgame)*
+
 ## Screenshots
 <table>
   <tr>
