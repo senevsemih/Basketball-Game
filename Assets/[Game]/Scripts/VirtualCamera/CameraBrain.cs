@@ -1,5 +1,6 @@
 using _Game_.Scripts.Managers;
 using Cinemachine;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace _Game_.Scripts.VirtualCamera
@@ -10,9 +11,9 @@ namespace _Game_.Scripts.VirtualCamera
 
         private void Awake() => CinemachineBrain = GetComponent<CinemachineBrain>();
 
-        private void OnEnable()
+        private async void OnEnable()
         {
-            if (CameraManager.Instance == null) return;
+            await UniTask.WaitUntil(() => CameraManager.Instance);
             CameraManager.Instance.SetCameraBrain(this);
         }
     }

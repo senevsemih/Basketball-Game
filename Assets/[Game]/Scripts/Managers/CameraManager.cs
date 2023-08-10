@@ -4,6 +4,7 @@ using System.Linq;
 using _Game_.Scripts.VirtualCamera;
 using _Game_.Scripts.VirtualCamera.Interfaces;
 using Cinemachine;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace _Game_.Scripts.Managers
@@ -71,10 +72,11 @@ namespace _Game_.Scripts.Managers
             }
         }
 
-        public void ActivateCamera(IVirtualCamera virtualCamera, float blendTime)
+        public async void ActivateCamera(IVirtualCamera virtualCamera, float blendTime)
         {
             if (CurrentActiveCamera == virtualCamera) return;
 
+            await UniTask.WaitUntil(() => CameraBrain);
             CameraBrain.CinemachineBrain.m_DefaultBlend =
                 new CinemachineBlendDefinition(
                     CinemachineBlendDefinition.Style.EaseInOut,

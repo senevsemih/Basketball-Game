@@ -30,10 +30,7 @@ namespace _Game_.Scripts.Other
             CharacterEvents.OnCourtAreaUpdated.AddListener(OnCourtAreaUpdated);
 
             await UniTask.WaitUntil(() => CameraManager.Instance);
-            if (CameraManager.Instance != null)
-            {
-                SubToCamera();
-            }
+            SubToCamera();
         }
 
         private void OnDisable()

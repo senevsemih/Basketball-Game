@@ -34,11 +34,9 @@ namespace _Game_.Scripts.Character.Controllers
             _events.onCaught.AddListener(CaughtBall);
 
             await UniTask.WaitUntil(() => Joystick.Instance);
-            if (Joystick.Instance != null)
-            {
-                Joystick.Instance.onInputUp.AddListener(OnInputUp);
-                Joystick.Instance.onInputDown.AddListener(OnInputDown);
-            }
+
+            Joystick.Instance.onInputUp.AddListener(OnInputUp);
+            Joystick.Instance.onInputDown.AddListener(OnInputDown);
         }
 
         private void OnDisable()
