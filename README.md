@@ -15,13 +15,13 @@ Otherwise, you will pass ball.
 <table>
   <tr>
     <td>
-      <img src="https://github.com/senevsemih/Basketball-Game/assets/37352722/b5a687b3-af45-44d2-9705-a132f000d231">
+      <img src="https://github.com/senevsemih/Basketball-Game/assets/37352722/8252c7fe-42bd-4181-a95a-34ffe7baa48a"/>
     </td>
     <td>
-      <img src="https://github.com/senevsemih/Basketball-Game/assets/37352722/6613e778-f141-4653-848d-7e7e840da097"/>
+      <img src="https://github.com/senevsemih/Basketball-Game/assets/37352722/4de472f3-4752-4352-a0fd-ac1dfd89c300">
     </td>
     <td>
-      <img src="https://github.com/senevsemih/Basketball-Game/assets/37352722/490b17c7-a938-48ea-b998-7ec331645d16"/>
+      <img src="https://github.com/senevsemih/Basketball-Game/assets/37352722/8c3325eb-9bd0-453c-a384-e4ecacb1b414"/>
     </td>
   </tr>
 </table>
