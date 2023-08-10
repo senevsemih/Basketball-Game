@@ -1,12 +1,9 @@
-using UnityEngine;
+using _Game_.Scripts.Character.Base;
 
 namespace _Game_.Scripts.Character.Other.Animation
 {
-    public class PassAnimationKey : MonoBehaviour
+    public class PassAnimationKey : AnimationKeyBase
     {
-        private CharacterEvents _events;
-
-        private void Awake() => _events = GetComponentInParent<CharacterEvents>();
-        public void PassKey() => _events.OnPassKeyTriggered?.Invoke();
+        public void PassKey() => Events.onPassKeyTriggered?.Invoke();
     }
 }

@@ -676,6 +676,7 @@ GameObject:
   - component: {fileID: 8658533243481351402}
   - component: {fileID: 1898948087533527140}
   - component: {fileID: 1425224941306652276}
+  - component: {fileID: 1244603088213639620}
   m_Layer: 0
   m_Name: ShotCollider
   m_TagString: Untagged
@@ -770,6 +771,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1398730612467561186, guid: 3b1f3eb8598e8684d91232ff4d6d4541, type: 3}
+--- !u!114 &1244603088213639620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3213499318338787193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e3739fac364bc497034d9535108f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightParticle: {fileID: 0}
+  courtAreaTypes: 1
 --- !u!1 &3490670689076817418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,7 +1264,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6251176243386179542}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

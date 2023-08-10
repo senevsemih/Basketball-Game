@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ff2875764949ab9600d69756257273, type: 3}
   m_Name: PlayerConfig
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
-  _rotateSpeed: 1000
-  _moveTreshold: 0.1
+  moveSpeed: 5
+  rotateSpeed: 10
+  moveThreshold: 0.1
+  rimDotValue: 0.7
+  passForwardDistanceRate: 7

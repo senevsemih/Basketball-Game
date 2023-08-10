@@ -1,12 +1,9 @@
-using UnityEngine;
+using _Game_.Scripts.Character.Base;
 
 namespace _Game_.Scripts.Character.Other.Animation
 {
-    public class ShootAnimationKey : MonoBehaviour
+    public class ShootAnimationKey : AnimationKeyBase
     {
-        private CharacterEvents _events;
-
-        private void Awake() => _events = GetComponentInParent<CharacterEvents>();
-        public void ShootKey() => _events.OnShootKeyTriggered?.Invoke();
+        public void ShootKey() => Events.onShootKeyTriggered?.Invoke();
     }
 }

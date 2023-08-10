@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - PlayerCollision
+  - BallCollision
+  - PlayerCourtBorder
+  - BallCourtBorder
   - 
   - 
   - 
