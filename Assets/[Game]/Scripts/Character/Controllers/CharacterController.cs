@@ -4,6 +4,7 @@ using _Game_.Scripts.Character.Handlers;
 using _Game_.Scripts.Character.Interfaces;
 using _Game_.Scripts.Interfaces;
 using _Game_.Scripts.Other;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace _Game_.Scripts.Character.Controllers
@@ -28,10 +29,11 @@ namespace _Game_.Scripts.Character.Controllers
             _events = GetComponent<CharacterEvents>();
         }
 
-        private void OnEnable()
+        private async void OnEnable()
         {
             _events.onCaught.AddListener(CaughtBall);
 
+            await UniTask.WaitUntil(() => Joystick.Instance);
             if (Joystick.Instance != null)
             {
                 Joystick.Instance.onInputUp.AddListener(OnInputUp);

@@ -5,6 +5,7 @@ using _Game_.Scripts.Data;
 using _Game_.Scripts.Interfaces;
 using _Game_.Scripts.Managers;
 using _Game_.Scripts.VirtualCamera.Interfaces;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -23,13 +24,12 @@ namespace _Game_.Scripts.Other
 
         public Transform Transform => transform;
 
-        private void Start() => _isActive = true;
-
-        private void OnEnable()
+        private async void OnEnable()
         {
             OnTargetChanged.AddListener(OnTargetChange);
             CharacterEvents.OnCourtAreaUpdated.AddListener(OnCourtAreaUpdated);
 
+            await UniTask.WaitUntil(() => CameraManager.Instance);
             if (CameraManager.Instance != null)
             {
                 SubToCamera();
@@ -46,6 +46,8 @@ namespace _Game_.Scripts.Other
                 UnSubToCamera();
             }
         }
+
+        private void Start() => _isActive = true;
 
         private void Update()
         {

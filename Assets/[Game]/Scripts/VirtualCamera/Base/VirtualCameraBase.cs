@@ -2,6 +2,7 @@ using System;
 using _Game_.Scripts.Managers;
 using _Game_.Scripts.VirtualCamera.Interfaces;
 using Cinemachine;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace _Game_.Scripts.VirtualCamera.Base
@@ -27,8 +28,9 @@ namespace _Game_.Scripts.VirtualCamera.Base
             CameraManager.Instance.RemoveCamera(this);
         }
 
-        public virtual void GetTarget(Type type)
+        public virtual async void GetTarget(Type type)
         {
+            await UniTask.WaitUntil(() => CameraManager.Instance.GetCameraTarget(type) != null);
             CameraTarget = CameraManager.Instance.GetCameraTarget(type);
             SetTargetValues(CameraTarget);
         }
