@@ -9,7 +9,7 @@ Otherwise, you will pass ball.
 ## Controls
 - Move -> Joystick
 
-### *[Play](https://senevsemih.itch.io/basketballgame)*
+### [Play](https://senevsemih.itch.io/basketballgame)
 
 ## Screenshots
 <table>
