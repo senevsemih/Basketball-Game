@@ -1,3 +1,5 @@
+# [Play](https://senevsemih.itch.io/basketballgame)
+
 # Basketball Game
 
 - Simple basketball game with dribbling, shot and pass.
@@ -8,8 +10,6 @@ Otherwise, you will pass ball.
 
 ## Controls
 - Move -> Joystick
-
-### [Play](https://senevsemih.itch.io/basketballgame)
 
 ## Screenshots
 <table>
